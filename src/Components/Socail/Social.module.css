@@ -1,0 +1,41 @@
+.box {
+  position: fixed;
+  left: 15px;
+  top: calc(50% - 70px);
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  height: fit-content;
+  z-index: 1000;
+  gap: 10px;
+}
+
+.box i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: var(--color1);
+  box-shadow: 1px 1px 7px var(--color1);
+  background-color: var(--color5);
+}
+
+.box i:hover {
+  background-color: var(--color4);
+  color: var(--color5);
+  transition: all 0.3s linear;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 460px) {
+  .box i {
+    height: 35px;
+    width: 35px;
+  }
+}

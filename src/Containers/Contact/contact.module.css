@@ -1,0 +1,329 @@
+.wrapper {
+  position: relative;
+  margin-top: 60px;
+}
+
+.wrapper .home {
+  position: relative;
+}
+
+.wrapper .home::before {
+  top: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+.wrapper .home .box {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 20px;
+  width: 50%;
+  backdrop-filter: blur(7px) saturate(180%);
+  -webkit-backdrop-filter: blur(7px) saturate(180%);
+  background-color: rgba(146, 146, 146, 0.158);
+  height: 100%;
+}
+
+.wrapper .home .box h2 {
+  position: relative;
+  font-size: 5.2vw;
+  color: var(--color1);
+  font-family: var(--secondFontFont);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(34, 34, 34, 0.527);
+  filter: contrast(1.2);
+}
+
+.wrapper .home .box h2 span {
+  font-size: 5.5vw;
+  color: var(--color4);
+  font-family: var(--secondFontFont);
+  letter-spacing: 1px;
+}
+
+.wrapper .home .box button {
+  margin-top: 10px;
+  padding: 23px 15px;
+  font-weight: 700;
+  background-color: var(--color4);
+  color: var(--color5);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.781);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 30%;
+  min-width: fit-content;
+}
+
+.wrapper .home .box button:hover {
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  color: var(--color1);
+}
+
+.wrapper .container {
+  position: relative;
+  margin: 10px auto;
+  width: 85%;
+  padding: 20px;
+}
+
+.wrapper .container section {
+  margin: 120px 0;
+  direction: rtl;
+}
+
+.wrapper .container .heading {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  width: 40%;
+  min-width: 300px;
+  margin: 10px auto;
+  margin-bottom: 40px;
+}
+
+.wrapper .container .heading h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 1.7em;
+  color: var(--color1);
+  font-family: var(--secondFont);
+  background-color: var(--color5);
+  z-index: 100;
+}
+
+.wrapper .container .heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  background-color: var(--color4);
+  height: 5px;
+  width: 100%;
+  left: 0;
+  border-radius: 50%;
+}
+
+.wrapper .container .heading img {
+  margin-right: 7px;
+}
+
+.container .contact {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.summary {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.contact .left,
+.contact .right {
+  flex: 1 1 350px;
+}
+
+.contact .right {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.right .input {
+  margin: 10px;
+  width: 100%;
+}
+
+.contact .right .input input,
+.contact .right .input textarea {
+  padding: 12px;
+  padding-left: 12px;
+  outline: none;
+  width: 95%;
+  border: none;
+  border-bottom: 2px solid rgba(92, 92, 92, 0.384);
+  resize: none;
+  transition: all 0.5s linear;
+}
+
+.contact .right .input input:focus,
+.contact .right .input textarea:focus {
+  border-bottom: 2px solid var(--color4);
+  transition: all 0.5s linear;
+}
+
+.contact .right button {
+  font-size: 15px;
+  padding: 12px 10px;
+  outline: none;
+  width: 130px;
+  margin: 5px 10px;
+  box-shadow: inset 3px 3px 25px var(--color4);
+  border: 1px solid var(--color4);
+  border-radius: 5px;
+  background-color: var(--color4);
+  color: #fff;
+  transition: all 0.3s linear;
+  box-shadow: 1px 1px 5px var(--color4);
+  cursor: pointer;
+  font-family: var(--secondFont);
+}
+
+.contact .right button:hover {
+  transition: all 0.3s ease;
+  color: var(--color4);
+  background: none;
+}
+
+.contact .left img {
+  width: 100%;
+  height: auto;
+}
+
+.container .person {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 25px;
+  direction: rtl;
+}
+
+.person .left,
+.person .right {
+  flex: 1 0 350px;
+}
+
+.person .left p {
+  font-size: 17px;
+  text-align: justify;
+  margin: 0;
+  width: 90%;
+}
+
+.person .right img {
+  width: 100%;
+  height: 100%;
+}
+
+.person .left button {
+  margin-top: 15px;
+  padding: 10px 12px;
+  font-weight: 600;
+  background-color: var(--color4);
+  color: var(--color5);
+  font-size: 16px;
+  border: none;
+  box-shadow: 1px 1px 7px rgba(36, 36, 36, 0.897);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 22%;
+  min-width: fit-content;
+  font-family: var(--secondFont);
+}
+
+.person .left button i {
+  margin-right: 7px;
+}
+
+.person .left button:hover {
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  color: var(--color1);
+}
+
+.person .left {
+  margin-bottom: 40px;
+}
+
+.container .cards {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container .review {
+  position: relative;
+  padding: 10px 0;
+}
+
+.container .review .cards {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 450px) {
+  .right button {
+    width: 150px;
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .wrapper .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll;
+  }
+
+  .wrapper .home .box {
+    width: 95%;
+    height: fit-content;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 15px rgba(53, 53, 53, 0.514);
+  }
+
+  .wrapper .home .box button {
+    width: 60%;
+  }
+
+  .wrapper .home .box h2 {
+    padding-left: 20px;
+    font-size: 10vw;
+  }
+
+  .wrapper .home .box h2 span {
+    font-size: 10vw;
+  }
+
+  .wrapper .home .box h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    border-left: 1vw solid var(--color4);
+    height: 100%;
+    top: 0;
+  }
+
+  .container p {
+    width: 100%;
+  }
+}

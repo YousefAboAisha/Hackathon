@@ -1,0 +1,163 @@
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 2px 15px rgba(63, 63, 63, 0.493);
+  z-index: 100;
+  min-height: 70px;
+  background-color: rgba(255, 255, 255);
+}
+
+.right {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.right a button {
+  padding: 10px 7px;
+  font-size: 13px;
+  border-radius: 17px;
+  outline: none;
+  border: 1px solid var(--color4);
+  background-color: var(--color4);
+  color: #fff;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  box-shadow: inset 1px 1px 5px rgba(6, 70, 54, 0.705);
+}
+
+.right a {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  min-width: 120px;
+  font-weight: 600;
+  transition: all 0.3s linear;
+  color: var(--color4);
+  font-family: var(--mainFont);
+}
+
+.right a:hover {
+  color: #000;
+  transition: all 0.3s linear;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.left img {
+  width: auto;
+  height: 40px;
+}
+
+.left a {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 5px;
+  color: #000;
+  font-family: "Lemonada", cursive;
+}
+
+.left a:hover {
+  color: #000;
+}
+
+.left .ring {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.left .ring i {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color4);
+  cursor: pointer;
+}
+
+.left .ring span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+  right: 2px;
+  top: 2px;
+  color: #fff;
+  font-size: 11px;
+}
+
+.toggle {
+  position: absolute;
+  right: 15px;
+  background-color: var(--color4);
+  padding: 9px 14px;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border: 1px solid transparent;
+  color: var(--color5);
+}
+
+.toggle:hover {
+  color: var(--color4);
+  background: transparent;
+  transition: all 0.3s linear;
+  border: 1px solid var(--color4);
+}
+
+.middle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.middle span {
+  color: var(--color4);
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.middle input {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 770px) {
+  nav .right {
+    display: none;
+  }
+
+  nav {
+    /* padding: 15px 0; */
+    height: 70px;
+  }
+
+  nav .toggle {
+    display: block;
+  }
+}

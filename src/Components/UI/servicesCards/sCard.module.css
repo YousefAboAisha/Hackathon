@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  flex: 0 1 300px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: justify;
+  padding: 17px 10px;
+  border-radius: 7px;
+  background-color: var(--color5);
+  color: var(--color1);
+  font-weight: 600;
+  border-bottom: 4px solid var(--color4);
+  transition: all 0.5s linear;
+  box-shadow: 1px 1px 10px rgba(27, 27, 27, 0.4);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  transition: all 0.5s linear;
+  box-shadow: 1px 1px 10px rgba(27, 27, 27);
+}
+
+.card p {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.card i {
+  font-size: 50px;
+  color: var(--color4);
+}
+
+.card i:nth-of-type(2) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 130px;
+  opacity: 0.08;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-family: var(--secondFont);
+  font-size: 17px;
+}

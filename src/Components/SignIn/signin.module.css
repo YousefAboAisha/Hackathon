@@ -1,0 +1,85 @@
+.wrapper {
+  position: relative;
+  margin: 130px auto;
+  direction: rtl;
+  width: 80%;
+}
+
+.wrapper .home form {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.wrapper .home .input {
+  padding: 10px;
+  width: 80%;
+}
+
+.wrapper .home form .input input {
+  padding: 12px;
+  padding-left: 12px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(59, 59, 59, 0.452);
+  width: 50%;
+  font-size: 15px;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+}
+
+.wrapper .home form .input input:focus {
+  border: 2px solid var(--color4);
+  transition: all 0.5s linear;
+}
+
+.wrapper .home button {
+  margin-top: 10px;
+  padding: 14px 12px;
+  background-color: var(--color4);
+  color: var(--color5);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-width: fit-content;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.wrapper .home form .chars {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(126, 126, 126);
+}
+
+.wrapper .home button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transition: all 0.5s linear;
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper .home {
+    width: 100%;
+  }
+
+  .wrapper .home .input {
+    width: 100%;
+  }
+
+  .wrapper .home form .input input {
+    width: 100%;
+  }
+
+  .wrapper .home form {
+    width: 100%;
+  }
+}

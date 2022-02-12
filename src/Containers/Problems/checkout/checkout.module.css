@@ -1,0 +1,129 @@
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  direction: rtl;
+}
+
+.wrapper .home {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 10px auto;
+  padding: 20px;
+  width: 85%;
+}
+
+.wrapper .home form {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 85%;
+}
+
+.wrapper .home .input {
+  padding: 10px;
+  width: 80%;
+}
+
+.wrapper .home form .input input,
+.wrapper .home form select,
+.wrapper .home form textarea {
+  padding: 12px;
+  padding-left: 12px;
+  outline: none;
+  resize: none;
+  border: none;
+  box-shadow: 1px 1px 5px rgba(59, 59, 59, 0.452);
+  width: 100%;
+  font-size: 15px;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+}
+
+.wrapper .home form .input input:focus,
+.wrapper .home form textarea:focus {
+  border: 2px solid var(--color4);
+  transition: all 0.5s linear;
+}
+
+.wrapper .home form .input input:last-of-type:focus {
+  border: 2px solid transparent;
+}
+
+.wrapper .home form .input label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.wrapper .home button {
+  margin-top: 10px;
+  padding: 14px 12px;
+  background-color: var(--color4);
+  color: var(--color5);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  min-width: fit-content;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.wrapper .home form .chars {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(126, 126, 126);
+}
+
+.wrapper .home form button {
+  margin-top: 15px;
+  padding: 10px 7px;
+  background-color: var(--color6);
+  color: #000;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: unset;
+  cursor: pointer;
+  outline: none;
+  min-width: fit-content;
+  width: 50px;
+  margin-left: 20px;
+}
+
+.wrapper .home button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transition: all 0.5s linear;
+}
+
+.error {
+  position: absolute;
+  display: block;
+  color: red;
+  bottom: -11px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 850px) {
+  .wrapper .home {
+    width: 100%;
+  }
+
+  .wrapper .home .input {
+    width: 100%;
+  }
+
+  .wrapper .home form {
+    width: 100%;
+  }
+}

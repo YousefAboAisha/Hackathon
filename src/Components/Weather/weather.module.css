@@ -1,0 +1,89 @@
+.box {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  position: relative;
+  position: fixed;
+  padding: 10px 12px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 101;
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(131, 131, 131, 0.459);
+  border-radius: 5px;
+  transition: all 0.5s linear;
+}
+
+.box > i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+.box .timezone {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.box .sky {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.box .sky img {
+  transform: scale(1.5);
+  margin-bottom: 8px;
+}
+
+.box .sky .skyInfo {
+  transform: translateY(-5px);
+  margin-bottom: 7px;
+}
+
+.box .info {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.box .info .wrap {
+  background-color: #fff;
+  padding: 5px 15px;
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+
+.box .info .wrap span {
+  font-size: 14px;
+}
+
+.toggle {
+  position: fixed;
+  bottom: 2px;
+  right: 2px;
+  background-color: #0000;
+  z-index: 102;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.toggle:hover {
+  transform: rotate(360deg);
+  transition: all 0.4s linear;
+}
