@@ -9,25 +9,36 @@ const Modal = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    let flag = true;
     setLoading(true);
     axios
       .get("https://type.fit/api/quotes")
       .then((res) => {
         let fetchedData = res.data[Math.floor(Math.random() * res.data.length)];
-        setQuote(fetchedData);
-        setLoading(false);
+        if (flag) {
+          setQuote(fetchedData);
+          setLoading(false);
+        }
       })
 
       .catch((error) => {
         console.log(error);
-        setLoading(false);
+        if (flag) setLoading(false);
       });
+
+    return () => {
+      flag = false;
+    };
   }, []);
 
   useEffect(() => {
+    let flag = true;
     setTimeout(() => {
-      setIsOpened(true);
+      if (flag) setIsOpened(true);
     }, 4000);
+    return () => {
+      flag = false;
+    };
   }, []);
 
   return loading ? (

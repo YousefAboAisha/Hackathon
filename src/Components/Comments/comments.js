@@ -39,6 +39,7 @@ const Comments = () => {
   };
 
   useEffect(() => {
+    let flag = true;
     axios
       .get("https://hackathon-60cfb-default-rtdb.firebaseio.com/Comments.json")
       .then((res) => {
@@ -46,13 +47,19 @@ const Comments = () => {
         for (let key in res.data) {
           fetchedData.push(res.data[key]);
         }
-        setFetchedComments(fetchedData);
-        setLoading(false);
+        if (flag) {
+          setFetchedComments(fetchedData);
+          setLoading(false);
+        }
       })
       .catch((error) => {
         console.log(error);
-        setLoading(false);
+        if (flag) setLoading(false);
       });
+
+    return () => {
+      flag = false;
+    };
   }, [fetchedComments]);
 
   let message = (

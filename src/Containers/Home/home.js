@@ -18,6 +18,8 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
+    let flag = true;
+
     axios
       .get("https://hackathon-60cfb-default-rtdb.firebaseio.com/problems.json")
       .then((res) => {
@@ -26,12 +28,15 @@ const Home = () => {
         for (let elem in fetchedData) {
           arr.push(fetchedData[elem]);
         }
-        console.log(arr);
-        setData(arr);
+        if (flag) setData(arr);
       })
       .catch((error) => {
         console.log(error);
       });
+
+    return () => {
+      flag = true;
+    };
   }, []);
 
   return (

@@ -18,7 +18,7 @@ const Wether = () => {
   //     .then((res) => {
   //       setData(res.data);
   //       setLoading(false);
-  //     })
+  //     })w
   //     .catch((error) => {
   //       console.log(error);
   //       setLoading(false);
@@ -29,7 +29,7 @@ const Wether = () => {
   //   console.log("Data is ", data);
   // }
 
-  return loading && data && Object.keys(data).length === 0 ? (
+  return loading ? (
     <Spinner />
   ) : (
     <>
