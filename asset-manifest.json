@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Weather-App/static/css/main.81ba2f4d.css",
+    "main.js": "/Weather-App/static/js/main.d8bad4a1.js",
+    "static/js/787.d9312eb8.chunk.js": "/Weather-App/static/js/787.d9312eb8.chunk.js",
+    "static/media/contactBackground.mp4": "/Weather-App/static/media/contactBackground.6216020ad9027f9a6789.mp4",
+    "static/media/problemsBackground.mp4": "/Weather-App/static/media/problemsBackground.5d7de6301f30dc2a23a4.mp4",
+    "static/media/finalVideo.mp4": "/Weather-App/static/media/finalVideo.6128832bc9b8d5263e6d.mp4",
+    "static/media/yousef.jpg": "/Weather-App/static/media/yousef.8e8e3737af9349ae490c.jpg",
+    "static/media/amira.jpg": "/Weather-App/static/media/amira.5e9d4fc182ebf8f02410.jpg",
+    "static/media/bisan.png": "/Weather-App/static/media/bisan.b43c9f4d5801072b1291.png",
+    "static/media/yasmeen.jpg": "/Weather-App/static/media/yasmeen.55f1b767c1e2884860b5.jpg",
+    "static/media/contact.svg": "/Weather-App/static/media/contact.a6e056e994bb89ae9db74cc9f2a3e6ac.svg",
+    "static/media/person2.svg": "/Weather-App/static/media/person2.6011e87b77bebfb9743955786e2ef11b.svg",
+    "static/media/whitelogo.svg": "/Weather-App/static/media/whitelogo.a09a27f156845e6997ae676518bde439.svg",
+    "static/media/logo.svg": "/Weather-App/static/media/logo.647883e881c8097783a094735afaab2a.svg",
+    "index.html": "/Weather-App/index.html",
+    "main.81ba2f4d.css.map": "/Weather-App/static/css/main.81ba2f4d.css.map",
+    "main.d8bad4a1.js.map": "/Weather-App/static/js/main.d8bad4a1.js.map",
+    "787.d9312eb8.chunk.js.map": "/Weather-App/static/js/787.d9312eb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81ba2f4d.css",
+    "static/js/main.d8bad4a1.js"
+  ]
+}
