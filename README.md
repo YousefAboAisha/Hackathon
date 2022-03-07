@@ -1,5 +1,6 @@
 # Project description
 A website dedicated to reporting weather and problems resulting from rain that areas in Gaza suffer from.
+
 Using: HTML, CSS, JS, REACT JS, FIREBASE, EMAIL-JS, MUI.
 
 
